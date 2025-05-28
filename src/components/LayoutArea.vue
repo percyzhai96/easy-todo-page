@@ -1,6 +1,7 @@
 <template>
   <div class="layout_class">
     <div class="title_text">当前任务</div>
+    <div class="content"></div>
   </div>
 </template>
 <script>
@@ -17,6 +18,8 @@ export default {
   width: 100%;
   height: auto;
   background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 32px 20px;
 }
 .title_text {
   height: 21px;
@@ -26,5 +29,6 @@ export default {
   line-height: 21px;
   letter-spacing: normal;
   color: #4c4c4c;
+  margin-bottom: 8px;
 }
 </style>
