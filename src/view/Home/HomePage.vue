@@ -5,7 +5,7 @@
         :titleName="'今日任务'"
         :timeGap="'1小时25分钟'"
         :choice="'code'"
-        :statuImg="'close'"
+        :statuImg="'open'"
       />
     </LayoutArea>
   </div>
