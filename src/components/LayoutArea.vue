@@ -1,12 +1,20 @@
 <template>
   <div class="layout_class">
-    <div class="title_text">当前任务</div>
-    <div class="content"></div>
+    <div class="title_text">{{ tileText }}</div>
+    <div class="content">
+      <slot></slot>
+    </div>
   </div>
 </template>
 <script>
 export default {
   name: 'LayoutArea',
+  props: {
+    tileText: {
+      type: String,
+      default: '',
+    },
+  },
   data() {
     return {}
   },

@@ -1,6 +1,8 @@
 <template>
   <div>
-    <LayoutArea />
+    <LayoutArea :tileText="'当前任务'">
+      <TaskCard />
+    </LayoutArea>
   </div>
 </template>
 
