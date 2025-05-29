@@ -28,8 +28,8 @@
     </div>
     <div class="right_content">
       <div class="right_inner_left">
-        <div>今日任务</div>
-        <div>1小时25分钟</div>
+        <div>{{ titleName }}</div>
+        <div>{{ timeGap }}</div>
       </div>
       <div class="right_inner_right">
         <img
@@ -45,11 +45,26 @@
 <script>
 export default {
   name: 'TaskCard',
+  props: {
+    titleName: {
+      type: String,
+      default: '',
+    },
+    timeGap: {
+      type: String,
+      default: '',
+    },
+    choice: {
+      type: String,
+      default: 'code',
+    },
+    statuImg: {
+      type: String,
+      default: 'close',
+    },
+  },
   data() {
-    return {
-      choice: 'code',
-      statuImg: 'open',
-    }
+    return {}
   },
 }
 </script>
